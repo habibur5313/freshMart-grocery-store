@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useContext, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,7 +16,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const Banner = () => {
   return (
     <div className=" ">
-      
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -34,37 +33,19 @@ const Banner = () => {
         <SwiperSlide>
           <img
             className="w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-xl"
-            src="https://i.ibb.co.com/6BXsLnQ/image-14.png"
+            src="https://i.ibb.co.com/S4p89770/image-3.png"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-xl"
-            src="https://i.ibb.co.com/ZYGJ3dF/image-13.png"
+            src="https://i.ibb.co.com/60JnKpDs/image-4.png"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-xl"
-            src="https://i.ibb.co.com/PFmg4Cv/image-12.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-xl"
-            src="https://i.ibb.co.com/MydsxhD/image-11.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-xl"
-            src="https://i.ibb.co.com/jhtxpQR/image-10.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-xl"
-            src="https://i.ibb.co.com/G762ywq/image-15.png"
+            src="https://i.ibb.co.com/pvd7Y9qQ/image-5.png"
           />
         </SwiperSlide>
       </Swiper>

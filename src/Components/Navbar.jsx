@@ -14,10 +14,10 @@ const Navbar = async () => {
   const user = await getUser();
 
   return (
-    <div className="flex flex-col sm:flex-row  justify-between items-center w-11/12 mx-auto py-5 border-b">
+    <div className="flex flex-col sm:flex-row md:px-14  justify-between items-center fixed top-0 z-50 bg-gray-600 rounded-b-xl opacity-50 text-white container mx-auto py-5 border-b">
       <div>
         <Link className="md:text-4xl text-3xl font-semibold md:font-bold uppercase" href={"/"}>
-          Blogger.com
+          FreshMart
         </Link>
       </div>
       <>
