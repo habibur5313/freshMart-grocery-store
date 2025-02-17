@@ -12,6 +12,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import ProductsCard from "./productsCard";
 
 const Banner = () => {
   return (
