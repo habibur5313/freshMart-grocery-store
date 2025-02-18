@@ -37,7 +37,7 @@ const Navbar = async () => {
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-1" href="Contact">
+            <Link className="flex items-center gap-1" href="/contact">
             <MdContactMail />Contact
             </Link>
           </li>
@@ -93,7 +93,7 @@ const Navbar = async () => {
             </Link>
           </li>
           <li>
-            <Link className="flex items-center gap-1" href="Contact">
+            <Link className="flex items-center gap-1" href="/contact">
             <MdContactMail /> Contact
             </Link>
           </li>

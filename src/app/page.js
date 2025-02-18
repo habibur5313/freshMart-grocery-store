@@ -1,7 +1,7 @@
 import Banner from "@/components/Banner";
-import Contact from "@/components/Contact";
-import Fruit from "@/components/Fruit";
-import MilkAndDrink from "@/components/MilkAndDrink";
+import Contact from "@/components/contact";
+import Fruit from "@/components/fruit";
+import MilkAndDrink from "@/components/milkanddrink";
 import VegetableAndSalad from "@/components/vegetableAndSalad";
 
 export default function Home() {
