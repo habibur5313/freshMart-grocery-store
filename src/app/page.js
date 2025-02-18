@@ -1,4 +1,4 @@
-import Banner from "@/components/Banner";
+import Banner from "@/components/banner";
 import Contact from "@/components/contact";
 import Fruit from "@/components/fruit";
 import MilkAndDrink from "@/components/milkanddrink";

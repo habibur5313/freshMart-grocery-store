@@ -3,7 +3,6 @@ import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import Link from "next/link";
 import { CgProfile } from "react-icons/cg";
 import { FaHome } from "react-icons/fa";
-import { TbBrandBlogger } from "react-icons/tb";
 
 const Footer = async () => {
   const { getUser } = await getKindeServerSession();
@@ -24,9 +23,9 @@ const Footer = async () => {
           </Link>
         </li>
         <li>
-          <Link className="flex items-center gap-1 ml-3" href="/blogs">
-            <TbBrandBlogger />
-            Blogs
+          <Link className="flex items-center gap-1 ml-3" href="/products">
+            
+            Products
           </Link>
         </li>
         <li>

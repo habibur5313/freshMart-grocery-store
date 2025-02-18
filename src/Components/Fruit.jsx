@@ -55,7 +55,7 @@ const Fruit = () => {
                     {product.description.slice(0, 100)}...
                   </p>
                   <div className="flex justify-end">
-                    <Link href={`/product/details/${product._id}`}>
+                    <Link href={`/products/details/${product._id}`}>
                       <button className="py-2 px-3 border rounded-xl bg-orange-500 text-white text-xl font-medium">
                         view details
                       </button>
@@ -92,7 +92,7 @@ const Fruit = () => {
                     {product.description.slice(0, 70)}...
                   </p>
                   <div className="flex justify-end">
-                    <Link href={`/product/details/${product._id}`}>
+                    <Link href={`/products/details/${product._id}`}>
                       <button className="py-2 px-3 border rounded-xl bg-orange-500 text-white text-xl font-medium">
                         view details
                       </button>
@@ -129,7 +129,7 @@ const Fruit = () => {
                     {product.description.slice(0, 60)}...
                   </p>
                   <div className="flex justify-end">
-                    <Link href={`/product/details/${product._id}`}>
+                    <Link href={`/products/details/${product._id}`}>
                       <button className="py-2 px-3 border rounded-xl bg-orange-500 text-white text-xl font-medium">
                         view details
                       </button>

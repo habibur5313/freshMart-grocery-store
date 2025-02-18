@@ -3,7 +3,6 @@ import { LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { FaHome } from "react-icons/fa";
-import { TbBrandBlogger } from "react-icons/tb";
 import { CgProfile } from "react-icons/cg";
 import { AiOutlineLogout } from "react-icons/ai";
 import { CiLogin } from "react-icons/ci";
@@ -32,7 +31,6 @@ const Navbar = async () => {
           </li>
           <li>
             <Link className="flex items-center gap-1" href="/products">
-              <TbBrandBlogger />
               Products
             </Link>
           </li>
@@ -88,7 +86,6 @@ const Navbar = async () => {
           </li>
           <li>
             <Link className="flex items-center gap-1" href="/products">
-              <TbBrandBlogger />
               Products
             </Link>
           </li>
