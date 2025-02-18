@@ -14,7 +14,7 @@ const Footer = async () => {
         className="md:text-4xl text-3xl font-semibold md:font-bold uppercase"
         href={"/"}
       >
-        Blogger.com
+        FreshMart
       </Link>
       <ul className="text-xl font-medium flex flex-wrap mt-3 justify-center items-center ">
         <li>
@@ -42,7 +42,7 @@ const Footer = async () => {
       <div className="border-t-2 container mx-auto">
         <p className="text-xl font-medium text-center mt-2">
           Copyright © {new Date().getFullYear()} - All right reserved by
-          Blogger.com{" "}
+          FreshMart
         </p>
       </div>
     </div>
