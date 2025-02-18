@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper/modules";
+import Link from "next/link";
 
 const VegetableAndSalad = () => {
   const [products, setProducts] = useState([]);
@@ -23,7 +24,9 @@ const VegetableAndSalad = () => {
   }, []);
   return (
     <>
-    <div className="w-11/12 mx-auto mt-20 hidden lg:flex">
+    <h1 className="text-3xl font-semibold text-center mt-10">Vegetable & Salad</h1>
+    <p className="font-medium text-center max-w-xl mx-auto mt-2 px-1">Consuming vegetables and salads is highly beneficial as they are nutrient-dense, low in calories, and high in fiber, supporting digestion, hydration, and overall health. 🥗</p>
+    <div className="w-11/12 mx-auto mt-10 hidden lg:flex">
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
@@ -36,12 +39,25 @@ const VegetableAndSalad = () => {
       >
         {products.map((product) => (
           <SwiperSlide key={product._id}>
-            <img className="w-full" src={product.img} alt="" />
+            <>
+            <img className="w-full rounded-xl" src={product.img} alt="" />
+           <div className="m-4">
+           <h1 className="text-3xl font-bold">{product.name}</h1>
+            <div className="flex justify-between items-center">
+            <p className="text-xl font-medium">{product.quantity}</p>
+            <p className="text-xl font-medium">${product.price}</p>
+            </div>
+            <p className="text-xl">{product.description.slice(0,100)}...</p>
+            <div className="flex justify-end">
+              <Link href={`/product/details/${product._id}`}><button className="py-2 px-3 border rounded-xl bg-orange-500 text-white text-xl font-medium">view details</button></Link>
+            </div>
+           </div>
+            </>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
-    <div className="w-11/12 mx-auto mt-20 hidden sm:flex lg:hidden">
+    <div className="w-11/12 mx-auto mt-10 hidden sm:flex lg:hidden">
       <Swiper
         slidesPerView={2}
         spaceBetween={30}
@@ -54,12 +70,25 @@ const VegetableAndSalad = () => {
       >
         {products.map((product) => (
           <SwiperSlide key={product._id}>
-            <img className="w-full" src={product.img} alt="" />
+            <>
+            <img className="w-full rounded-xl" src={product.img} alt="" />
+           <div className="m-4">
+           <h1 className="text-3xl font-bold">{product.name}</h1>
+            <div className="flex justify-between items-center">
+            <p className="text-xl font-medium">{product.quantity}</p>
+            <p className="text-xl font-medium">${product.price}</p>
+            </div>
+            <p className="text-xl">{product.description.slice(0,70)}...</p>
+            <div className="flex justify-end">
+              <Link href={`/product/details/${product._id}`}><button className="py-2 px-3 border rounded-xl bg-orange-500 text-white text-xl font-medium">view details</button></Link>
+            </div>
+           </div>
+            </>
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
-    <div className="w-11/12 mx-auto mt-20 sm:hidden">
+    <div className="w-11/12 mx-auto mt-10 sm:hidden">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -72,7 +101,20 @@ const VegetableAndSalad = () => {
       >
         {products.map((product) => (
           <SwiperSlide key={product._id}>
-            <img className="w-full" src={product.img} alt="" />
+           <>
+            <img className="w-full rounded-xl" src={product.img} alt="" />
+           <div className="m-4">
+           <h1 className="text-3xl font-bold">{product.name}</h1>
+            <div className="flex justify-between items-center">
+            <p className="text-xl font-medium">{product.quantity}</p>
+            <p className="text-xl font-medium">${product.price}</p>
+            </div>
+            <p className="text-xl">{product.description.slice(0,60)}...</p>
+            <div className="flex justify-end">
+              <Link href={`/product/details/${product._id}`}><button className="py-2 px-3 border rounded-xl bg-orange-500 text-white text-xl font-medium">view details</button></Link>
+            </div>
+           </div>
+            </>
           </SwiperSlide>
         ))}
       </Swiper>

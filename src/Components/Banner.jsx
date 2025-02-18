@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import ProductsCard from "./productsCard";
+
 
 const Banner = () => {
   return (
@@ -35,19 +35,19 @@ const Banner = () => {
           <img
             className="w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-xl"
             src="https://i.ibb.co.com/S4p89770/image-3.png"
-          />
+            alt="banner"/>
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-xl"
             src="https://i.ibb.co.com/60JnKpDs/image-4.png"
-          />
+            alt="banner"/>
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="w-full h-[300px] md:h-[500px] lg:h-[700px] rounded-xl"
             src="https://i.ibb.co.com/pvd7Y9qQ/image-5.png"
-          />
+            alt="banner"/>
         </SwiperSlide>
       </Swiper>
     </div>
