@@ -17,7 +17,7 @@ const VegetableAndSalad = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:5000/products?category=vegetableAndsalad")
+      .get("https://fresh-mart-server.vercel.app/products?category=vegetableAndsalad")
       .then((res) => {
         setProducts(res.data);
       });

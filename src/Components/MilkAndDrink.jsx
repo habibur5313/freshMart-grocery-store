@@ -16,7 +16,7 @@ import Link from "next/link";
 const MilkAndDrink = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/products?category=milkAndDrink").then((res) => {
+    axios.get("https://fresh-mart-server.vercel.app/products?category=milkAndDrink").then((res) => {
       setProducts(res.data);
     });
   }, []);
